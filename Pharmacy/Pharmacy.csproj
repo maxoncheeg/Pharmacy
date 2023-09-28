@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F13617F-85BA-4988-9005-B3B188D9CA10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pharmacy</RootNamespace>
+    <AssemblyName>Pharmacy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\FormPlacer.cs" />
+    <Compile Include="Classes\LoginResult.cs" />
+    <Compile Include="Data\Classes\AdditiveCriterion.cs" />
+    <Compile Include="Data\Views\ViewAdditiveCriterion.cs" />
+    <Compile Include="Forms\Elements\ActionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Elements\AddPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Elements\ItemPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAdministrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAdministrator.Designer.cs">
+      <DependentUpon>FormAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClientChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClientChange.Designer.cs">
+      <DependentUpon>FormClientChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormInputClientCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormInputClientCard.Designer.cs">
+      <DependentUpon>FormInputClientCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMedicationChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMedicationChange.Designer.cs">
+      <DependentUpon>FormMedicationChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPharmacist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPharmacist.Designer.cs">
+      <DependentUpon>FormPharmacist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\FormAddClientPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\FormAddClientPanel.Designer.cs">
+      <DependentUpon>FormAddClientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\FormAddPharmacist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\FormAddPharmacist.Designer.cs">
+      <DependentUpon>FormAddPharmacist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\FormClientPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\FormClientPanel.Designer.cs">
+      <DependentUpon>FormClientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\FormMedicationPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\FormMedicationPanel.Designer.cs">
+      <DependentUpon>FormMedicationPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\FormPharmacistPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\FormPharmacistPanel.Designer.cs">
+      <DependentUpon>FormPharmacistPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\FormPurchasePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\FormPurchasePanel.Designer.cs">
+      <DependentUpon>FormPurchasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PharmacyAmountBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PharmacyAmountBox.Designer.cs">
+      <DependentUpon>PharmacyAmountBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PharmacyMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PharmacyMessageBox.Designer.cs">
+      <DependentUpon>PharmacyMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\DatabaseManager.cs" />
+    <Compile Include="Managers\LoginManager.cs" />
+    <Compile Include="Data\Classes\Administrator.cs" />
+    <Compile Include="Data\Classes\Client.cs" />
+    <Compile Include="Data\Classes\LoyaltyCard.cs" />
+    <Compile Include="Data\Classes\Medication.cs" />
+    <Compile Include="Data\Classes\Pharmacist.cs" />
+    <Compile Include="Data\Classes\Purchase.cs" />
+    <Compile Include="Data\Classes\PurchaseContent.cs" />
+    <Compile Include="Data\DatabaseConnection.cs" />
+    <Compile Include="Data\ITable.cs" />
+    <Compile Include="Data\Tables\TableAdministrator.cs" />
+    <Compile Include="Data\Tables\TableClient.cs" />
+    <Compile Include="Data\Tables\TableLoyaltyCard.cs" />
+    <Compile Include="Data\Tables\TableMedication.cs" />
+    <Compile Include="Data\Tables\TablePharmacist.cs" />
+    <Compile Include="Data\Tables\TablePurchase.cs" />
+    <Compile Include="Data\Tables\TablePurchaseContent.cs" />
+    <Compile Include="Forms\Elements\AuthorizationPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Elements\LoginPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAuthorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAuthorization.Designer.cs">
+      <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormAdministrator.resx">
+      <DependentUpon>FormAdministrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAuthorization.resx">
+      <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormClientChange.resx">
+      <DependentUpon>FormClientChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormInputClientCard.resx">
+      <DependentUpon>FormInputClientCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMedicationChange.resx">
+      <DependentUpon>FormMedicationChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPharmacist.resx">
+      <DependentUpon>FormPharmacist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\FormAddClientPanel.resx">
+      <DependentUpon>FormAddClientPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\FormAddPharmacist.resx">
+      <DependentUpon>FormAddPharmacist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\FormClientPanel.resx">
+      <DependentUpon>FormClientPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\FormMedicationPanel.resx">
+      <DependentUpon>FormMedicationPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\FormPharmacistPanel.resx">
+      <DependentUpon>FormPharmacistPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\FormPurchasePanel.resx">
+      <DependentUpon>FormPurchasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PharmacyAmountBox.resx">
+      <DependentUpon>PharmacyAmountBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PharmacyMessageBox.resx">
+      <DependentUpon>PharmacyMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\логотип.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faq.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
